@@ -1,0 +1,29 @@
+1. Declaring
+let/const/var variableName: data-type = value;
+
+2. any
+
+3. Array
+let/const/var variableName: data-type[] = [...]
+let/const/var variableName: [data-type, data-type, ...] = [...]
+
+4. Union => setting more than one data types
+let/const/var variableName: data-type | data-type | data-type = value
+
+5. Tuple => especially for Array
+let/const/var variableName: [data-type....][] = [[..], [..], ...]
+
+6. Enum
+enum variableName { name1, name2, ..... }; // firstValue = 0 (by default)
+enum variableName { name1 = value, name2 = value, ..... };
+
+7. Object
+let/const/var variableName: {key1: data-type1; key2: data-type2; ...} = {.....}
+or
+type someName {key1: data-type1; key2: data-type2; ...};
+let/const/var variableName: someName = {....}
+
+8. Copying
+let/const/var variableName = <data-type>otherVariableName
+or
+let/const/var variableName = otherVariableName as data-type 
